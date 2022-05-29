@@ -1,4 +1,4 @@
-# portfolio-generator
+# psychotic-structure
 # Object-Oriented Programming Challenge: Team Profile Generator
 
 ## Description
