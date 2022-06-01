@@ -30,4 +30,4 @@ THEN I exit the application, and the HTML is generated
 ### ToDO:
 -   
 
-## Deployed Link & Screenshot
+## Screenshots & Video
