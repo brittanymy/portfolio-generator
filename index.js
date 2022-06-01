@@ -7,6 +7,8 @@ const Engineer = require("./lib/Engineer");
 const Manager = require("./lib/manager");
 const Intern = require("./lib/intern");
 
+const generatehtml = require("./src/generatehtml.js")
+
 // Push team questions
 const teamData = [];
 
@@ -58,6 +60,7 @@ function promptQuestions() {
               managerOfficeNumber.officeNumber
             );
             teamData.push(newManager);
+            continueApp()
           });
       } else if (answers.role === "Engineer") {
         inquirer
@@ -76,6 +79,7 @@ function promptQuestions() {
               githubAnswer.github
             );
             teamData.push(newEngineer);
+           continueApp()
           });
       } else if (answers.role === "Intern") {
         inquirer
@@ -94,13 +98,33 @@ function promptQuestions() {
               school
             );
             teamData.push(newIntern);
+           continueApp()
           });
       }
     })
-    .then((response) => {
-      const index = index.html(response);
-      writeToFile("./dist/index.html", index);
-    });
+    
 }
 
+const endQuestions = async() => {
+    const response = await generatehtml(teamData) 
+    await fs.writeFileSync("./dist/index.html", response);
+}
+
+const continueApp = ()=>{
+    inquirer
+    .prompt ([
+        {
+            type: "list",
+            message: "Do you want to add more team members?",
+            choices: ["Yes", "No"],
+            name: "Userselection"
+        }
+    ])
+    .then(({Userselection}) => {
+        switch(Userselection) {
+            case "Yes": promptQuestions(); break;
+            case "No": endQuestions(); break;
+        }
+    })
+}
 promptQuestions();
