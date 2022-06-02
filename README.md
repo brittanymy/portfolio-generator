@@ -35,6 +35,7 @@ THEN I exit the application, and the HTML is generated
 
 ## Screenshot & Video
 ![Team Generator Example](./assets/images/profile-generator.png)
+
 https://user-images.githubusercontent.com/97000955/171752834-77f5803a-58a6-4885-b449-f9608258085f.mp4
 
 
