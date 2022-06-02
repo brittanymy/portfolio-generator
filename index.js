@@ -4,8 +4,8 @@ const fs = require("fs");
 
 // Establish routes between employee library and index
 const Engineer = require("./lib/Engineer");
-const Manager = require("./lib/manager");
-const Intern = require("./lib/intern");
+const Manager = require("./lib/Manager");
+const Intern = require("./lib/Intern");
 
 const generatehtml = require("./src/generatehtml.js")
 
