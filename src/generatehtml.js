@@ -3,30 +3,42 @@ module.exports = generatehtml =(teamArr)=>{
     for (let i = 0; i < teamArr.length; i++){
         if(teamArr[i].getRole() === "Manager"){
             HTML += `
-            <div class="card" style="width: 18rem;">
-            <h2 class="card-title">Name:${teamArr[i].name}</h2>
-            <h3 class="card-subtitle">Role:${teamArr[i].getRole()}</h3>
-            <p class="card-text">Id:${teamArr[i].ID}</p>
-            <p class="card-text">Email:${teamArr[i].email}</p>
-            <p class="card-text">Office Number:${teamArr[i].officeNumber}</p>
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                <div class="card-header bg-primary">
+                    <h2 class="card-title text-white">Name: ${teamArr[i].name}</h2>
+                    <h3 class="card-subtitle text-white">Role: ${teamArr[i].getRole()}</h3>
+                </div>
+                <ul class="card-body list-group">
+                    <li class="card-text list-group-item">Id: ${teamArr[i].id}</li>
+                    <li class="card-text list-group-item">Email: ${teamArr[i].email}</li>
+                    <li class="card-text list-group-item">Office Number: ${teamArr[i].officeNumber}</li>
+                </ul>
             </div>`
         } else if (teamArr[i].getRole() === "Engineer"){
             HTML += `
-            <div class="card" style="width: 18rem;">
-            <h2 class="card-title">Name:${teamArr[i].name}</h2>
-            <h3 class="card-subtitle">Role:${teamArr[i].getRole()}</h3>
-            <p class="card-text">Id:${teamArr[i].ID}</p>
-            <p class="card-text">Email:${teamArr[i].email}</p>
-            <p class="card-text">Github:${teamArr[i].github}</p>
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                <div class="card-header bg-primary">
+                    <h2 class="card-title text-white">Name: ${teamArr[i].name}</h2>
+                    <h3 class="card-subtitle text-white">Role: ${teamArr[i].getRole()}</h3>
+                </div>
+                    <ul class="card-body list-group">
+                    <li class="card-text list-group-item">Id: ${teamArr[i].id}</li>
+                    <li class="card-text list-group-item">Email: ${teamArr[i].email}</li>
+                    <li class="card-text list-group-item">Github: ${teamArr[i].github}</li>
+                </ul>
             </div>`
         } else if (teamArr[i].getRole() === "Intern"){
             HTML += `
-            <div class="card" style="width: 18rem;">
-            <h2 class="card-title">Name:${teamArr[i].name}</h2>
-            <h3 class="card-subtitle">Role:${teamArr[i].getRole()}</h3>
-            <p class="card-text">Id:${teamArr[i].ID}</p>
-            <p class="card-text">Email:${teamArr[i].email}</p>
-            <p class="card-text">School:${teamArr[i].school}</p>
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                <div class="card-header bg-primary">
+                    <h2 class="card-title text-white">Name: ${teamArr[i].name}</h2>
+                    <h3 class="card-subtitle text-white">Role: ${teamArr[i].getRole()}</h3>
+                </div>
+                <ul class="card-body list-group">
+                    <li class="card-text list-group-item">Id: ${teamArr[i].id}</li>
+                    <li class="card-text list-group-item">Email: ${teamArr[i].email}</li>
+                    <li class="card-text list-group-item">School: ${teamArr[i].school}</li>
+                </ul>
             </div>`
         }
     }
@@ -42,7 +54,7 @@ module.exports = generatehtml =(teamArr)=>{
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <header class="bg-primary text-center">
+    <header class="bg-primary text-center text-bg-danger p-3 text-white mb-5">
         <h1>My Team</h1>
     </header>
 <main class="container d-flex flex-wrap justify-content-evenly">

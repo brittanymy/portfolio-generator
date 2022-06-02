@@ -28,8 +28,10 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
 ### ToDO:
--   Edit HTML and apply stylesheet
+-   Edit HTML styling (DONE)
 -   Run employee test files (DONE)
--   Move node_modules into .gitignore
+-   Move node_modules into .gitignore (DONE)
 
-## Screenshots & Video
+## Screenshot & Video
+![Team Generator Example](./assets/images/profile-generator.png)
+
