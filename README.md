@@ -28,6 +28,8 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
 ### ToDO:
--   
+-   Edit HTML and apply stylesheet
+-   Run employee test files
+-   Move node_modules into .gitignore
 
 ## Screenshots & Video

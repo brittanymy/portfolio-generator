@@ -41,10 +41,10 @@ module.exports = generatehtml =(teamArr)=>{
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="bg-primary">
+    <header class="bg-primary text-center">
         <h1>My Team</h1>
     </header>
-<main class="cotainer d-flex flex-wrap justify-content-evenly">
+<main class="container d-flex flex-wrap justify-content-evenly">
 ${HTML}
 </main>
 </body>
