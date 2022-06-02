@@ -2,11 +2,11 @@ const Employee = require("../lib/Employee.js")
 const Engineer = require("../lib/Engineer.js")
 
 test("creates engineer object", () => {
-    const engineer = new Engineer("Chris", "23", "christopher@email.com, christgithub");
+    const engineer = new Engineer("Chris", "23", "christopher@email.com", "chrisgithub");
 
     expect(engineer.name).toBe("Chris");
     expect(engineer.id).toBe("23");
-    expect(engineer.email).toBe("chris@email.com");
+    expect(engineer.email).toBe("christopher@email.com");
     expect(engineer.github).toBe("chrisgithub");
 });
 
