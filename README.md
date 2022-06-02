@@ -2,6 +2,7 @@
 # Object-Oriented Programming Challenge: Team Profile Generator
 
 ## Description
+This application allows managers to create custom profiles for their employees using their basic information. Managers can run node to enter their team members data directly from their terminal. Technologies used: javascript, node, inquirer, jest. 
 
 ## User Story
 AS A manager
