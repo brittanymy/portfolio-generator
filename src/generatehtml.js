@@ -1,6 +1,6 @@
 module.exports = generatehtml =(teamArr)=>{
     let HTML = ""
-    for (let i=0;i<teamArr.length;i++){
+    for (let i = 0; i < teamArr.length; i++){
         if(teamArr[i].getRole() === "Manager"){
             HTML += `
             <div class="card" style="width: 18rem;">
@@ -39,6 +39,7 @@ module.exports = generatehtml =(teamArr)=>{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Profile Generator</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header class="bg-primary text-center">

@@ -29,7 +29,7 @@ THEN I exit the application, and the HTML is generated
 
 ### ToDO:
 -   Edit HTML and apply stylesheet
--   Run employee test files
+-   Run employee test files (DONE)
 -   Move node_modules into .gitignore
 
 ## Screenshots & Video
